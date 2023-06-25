@@ -31,3 +31,10 @@ document.querySelector('.check').addEventListener('click', function () {
         real_number = Math.ceil((20 * Math.random()));
     }
 });
+
+document.querySelector('.again').addEventListener('click', function () {
+    real_number = Math.ceil((20 * Math.random()));
+    document.querySelector('.message').textContent = 'Start guessing ...';
+    document.querySelector('.score').textContent = 20;
+    document.querySelector('.guess').value = '';
+});
